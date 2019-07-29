@@ -1,0 +1,7 @@
+-- auto-generated definition
+create table cat
+(
+  catColor varchar(225) charset utf8 not null,
+  catName  varchar(225) charset utf8 not null
+);
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cat.dao.CatDao">
+
+    <resultMap type="com.cat.entity.Cat" id="catMap">
+        <result property="catColor" column="catColor" />
+        <result property="catName" column="catName" />
+    </resultMap>
+
+
+    <insert id="insertCat" parameterType="cat" >
+
+        insert into cat(catColor, catName) values(#{catColor},#{catName})
+
+    </insert>
+
+</mapper>
